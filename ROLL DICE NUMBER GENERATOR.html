@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Roll Dice Number Generator</title>
+  <link rel="icon" type="image/x-icon" href="./sanele well done.jpg">
+  <link rel="stylesheet" href="style5.css">
+  <script src="app5.js"></script>
+</head>
+<body>
+  <div id="rng">
+    <h1>Roll Dice Number Generator</h1>
+    <div class="flex-container">
+      <div class="flex-items"><label for='rollTimes'>How many times do you want the dice to roll?</label><input type="number" id="rollTimes" name="rollTimes" min="1" max='100' step="1" placeholder="1-100"></div>
+      <div class="flex-items"><label for="sides">How many sides do you want the dice to have?</label>
+        <select id="sides" name="sides">
+          <option value="" selected disabled hidden>CHOOSE</option>
+          <option value="4">4 sides</option>
+          <option value="6">6 sides</option>
+          <option value="8">8 sides</option>
+          <option value="10">10 sides</option>
+          <option value="12">12 sides</option>
+          <option value="20">20 sides</option>
+        </select>
+      </div>
+      <button onclick="roll()" class="flex-items">ROLL!</button>
+      <p id="output" class="flex-items"></p>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
